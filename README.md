@@ -149,5 +149,4 @@ Give a ⭐️ if this project helped you!
 Made with ❤️ by [ ANKIT KUMAR]
 Project Year: 2026
 Course: AICTE AI Internship Batch 7
-🚀 Live Demo AI Travel Planner Screen Shot : [Image](https://github.com/user-attachments/assets/15b2e3b0-1e8c-4140-bdca-00db9bcb546a)
 
