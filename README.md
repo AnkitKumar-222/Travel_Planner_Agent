@@ -43,7 +43,7 @@ Run Locally
 bashstreamlit run app.py
 ```
 
-The app will open at `http://localhost:8501`
+The app will open at ` https://travelplanneragent-6xcw8njmyxbp6xle2p7ztt.streamlit.app/#location-map `
 
 ---
 
