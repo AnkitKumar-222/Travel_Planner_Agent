@@ -16,9 +16,15 @@ Try the app: AI Travel Planner
 
 📸 Screenshots
 1. Homepage
+   <img width="818" height="1599" alt="Image" src="https://github.com/user-attachments/assets/546b8cda-42fe-4be9-a5fc-8667e76a1b8d" />[](url)
+
+   
 2. Generated Itinerary
+   <img width="821" height="1599" alt="Image" src="https://github.com/user-attachments/assets/19718217-63cd-4b61-a738-508de770aa5f" />[](url)
+
+   
 3. Budget Breakdown
-   Page View URL :- ![Image](https://github.com/user-attachments/assets/15b2e3b0-1e8c-4140-bdca-00db9bcb546a)
+   <img width="852" height="1600" alt="Image" src="https://github.com/user-attachments/assets/43142b8a-04cf-438c-aeb5-59b497255293" />[](url)
    
 
 🛠️ Technology Stack
