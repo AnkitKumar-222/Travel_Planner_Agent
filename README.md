@@ -1,97 +1,151 @@
-# Travel-planner-Agent
-An AI-powered Travel Planner Agent that helps users plan personalized trips based on preferences like budget, destination, duration, and interests. Built using IBM Watson/Granite, IBM Cloud Lite, and Python, the assistant offers smart itinerary suggestions, hotel and transport info, and more.
+ 🎒 AI Travel Planner for Students
+An intelligent, AI-powered web application that helps students plan budget-friendly trips with personalized itineraries and smart budget optimization.
 
-##🧳 AI Travel Planner Agent – IBM Watsonx Project
+🌟 Features
 
-This repository showcases a powerful **AI-based Travel Planner Agent** built using **IBM Watsonx**, designed to simplify and personalize travel planning for users through intelligent conversations and real-time recommendations. The agent uses IBM's **Granite Foundation Models** to understand natural language inputs and generate dynamic travel plans tailored to user preferences, budget, and travel constraints.
+Smart Budget Allocation - Automatically distributes budget across accommodation (40%), food (30%), activities (20%), and transport (10%)
+Day-wise Itinerary Generation - Creates structured travel plans with activities for each day
+Interactive Map Visualization - Displays destination on an interactive map using Folium
+User-Friendly Interface - Simple, intuitive design requiring only 3 inputs
+Instant Results - Generates complete travel plans in under 2 seconds
+Mobile Responsive - Works seamlessly on all devices
 
-## ✨ Project Overview
 
-Planning a trip can be overwhelming – from deciding destinations to managing budgets and checking weather conditions. This AI Travel Planner Agent solves that by offering a **smart, conversational, and automated planning experience**. Deployed on IBM Watsonx, the agent listens to user inputs and generates personalized suggestions, itineraries, and tips in seconds.
+🚀 Live Demo
+Try the app: AI Travel Planner
 
-##🧠 Technologies Used
+📸 Screenshots
+1. Homepage
+2. Generated Itinerary
+3. Budget Breakdown
+   
 
-- 🧩 IBM Watsonx.ai – Foundation Model + Prompt Lab + Agent Builder  
-- 📊 IBM Granite Model – Natural language understanding and reasoning  
-- ☁️ IBM Cloud Functions – Serverless backend logic  
-- 🔐 IAM Token Auth – Secure API integration  
-- 🔗 External APIs – Weather, Maps, Booking (future scope)  
-- 🐍 Python 3.11 – Agent runtime environment  
+🛠️ Technology Stack
 
-##🌟 Key Features
+Language: Python 3.10+
+Web Framework: Streamlit
+Map Visualization: Folium
+Development Environment: Google Colab
+Deployment: Streamlit Cloud
+Version Control: Git & GitHub
 
-- 🗺️ Real-Time Itinerary Generation :- 
-  Plans trips dynamically based on weather, duration, budget, and preferences.
 
-- 🧠 LLM-Powered Intelligence :- 
-  Uses IBM Granite to understand and respond to custom user queries like:  
-  > “Plan a 3-day trip to Himachal under ₹10,000”  .
+📋 Installation & Setup
+Prerequisites
+bashPython 3.10 or higher
+pip package manager
+Clone Repository
+bashgit clone https://github.com/your-username/ai-travel-planner.git
+cd ai-travel-planner
+Install Dependencies
+bashpip install -r requirements.txt
+Run Locally
+bashstreamlit run app.py
+```
 
-- 💬 Conversational UI:- 
-  Fully chat-based interface that mimics a real travel agent.
+The app will open at `http://localhost:8501`
 
-- 🔄 Weather + Travel Delay Awareness :-
-  Suggests alternative routes or dates if weather conditions are not favorable.
+---
 
-- 🌍 Public Endpoint Deployment :- 
-  The agent is accessible through a secured, live API endpoint.
+## 💻 Usage
 
-- 📄 Auto-Documentation and Logs :-  
-  Watsonx Agent Lab keeps track of usage, history, and CUH/token costs.
+1. **Enter Destination** - Type your travel destination (e.g., "Goa", "Manali")
+2. **Set Budget** - Enter your total budget in ₹ (minimum ₹1000)
+3. **Choose Duration** - Select number of days (1-30 days)
+4. **Generate Plan** - Click the button to instantly create your itinerary
+5. **View Results** - Get day-wise plans, budget breakdown, and interactive map
 
-##🚀 How It Works
+---
 
-1. User opens the chat and types a query (e.g., “Suggest winter destinations under ₹15,000”).
-2. The input is processed by IBM Granite foundation model.
-3. The AI agent replies with suggestions, travel tips, and custom itineraries.
-4. Backend logic triggers external APIs (weather, location) for enhanced results.
-5. Responses are updated in real-time if external conditions change.
+## 📊 How It Works
 
-## 👥 Target End Users
+### Algorithm Overview
+```
+User Input → Validation → Budget Calculation → Itinerary Generation → Map Display
+Budget Allocation Formula:
+pythonDaily Budget = Total Budget ÷ Number of Days
 
-- Solo Travelers & Budget Tourists  
-- Families and Students  
-- Corporate professionals  
-- Travel Agencies & Tour Operators  
-- Developers looking to integrate AI trip planning into apps  
-- Educational users researching AI & NLP projects
+Accommodation = Total Budget × 0.40 (40%)
+Food = Total Budget × 0.30 (30%)
+Activities = Total Budget × 0.20 (20%)
+Transport = Total Budget × 0.10 (10%)
+```
 
-## 📌 Future Scope
+---
 
-- 🎙️ Voice-based interaction (speech-to-text)  
-- 🌐 Multilingual support (Hindi, Tamil, Bengali, etc.)  
-- 📱 Android/iOS mobile app version  
-- 🌦️ Live travel and weather APIs  
-- 💳 Travel booking system (flights, hotels)  
-- 🧠 Memory and past preference tracking  
-- 📊 Admin dashboard with analytics  
+## 📁 Project Structure
+```
+ai-travel-planner/
+├── app.py                 # Main application file
+├── requirements.txt       # Python dependencies
+├── README.md             # Project documentation
+└── .gitignore            # Git ignore file (optional)
 
-## Conclusion
+🎯 Problem Statement
+Planning trips is time-consuming and expensive for students with limited budgets. Current travel apps provide generic suggestions without considering:
 
-This AI Travel Planner Agent is a step toward **AI-powered smart tourism. It reduces manual planning effort and ensures a smooth, customized travel experience. With seamless IBM Watsonx integration and advanced AI capabilities, it is ready to serve as both a **demo project** and a **production-ready system** for modern travel tech solutions.
+Student-specific budget constraints
+Personalized preferences
+Efficient time management
+Cost optimization
 
-## 🏁 Getting Started
+This application solves these challenges through AI-powered automation.
 
-> Note: This is a cloud-deployed project. You can test the agent directly via the public endpoint provided in IBM Watsonx Agent Lab (requires IBM Cloud account).
+✨ Future Enhancements
 
-1. Clone the repository  
-2. Review the documentation  
-3. Explore the Watsonx project dashboard  
-4. Customize prompts or integrate with your own UI  
+ Real-time flight and hotel price integration via APIs
+ Weather forecast integration
+ Student discount database
+ Group travel planning with cost splitting
+ Chatbot interface for conversational planning
+ Multi-language support
+ Mobile app (Android & iOS)
+ User authentication and saved itineraries
+ Social sharing features
+ Carbon footprint calculator
 
-## 🤝 Contributing
 
-Contributions are welcome! Feel free to suggest features, report bugs, or open PRs for enhancements.
+🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📜 License
+Fork the repository
+Create your feature branch (git checkout -b feature/AmazingFeature)
+Commit your changes (git commit -m 'Add some AmazingFeature')
+Push to the branch (git push origin feature/AmazingFeature)
+Open a Pull Request
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## 🙌 Acknowledgments
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- IBM Watsonx Team  
-- IBM Granite Foundation Models  
-- IBM Cloud Functions  
-- All open-source contributors and AI researchers whose tools and guides made this project possible.
+👨‍💻 Author
+ANKIT KUMAR
 
- 
+GitHub: @your-username
+LinkedIn: Your Profile
+Email: ankit.kumar.official115@email.com
+
+
+ Acknowledgments
+
+Edunet Foundation - For providing the learning platform and project opportunity
+AICTE - For the AI internship program
+IBM SkillsBuild - For AI learning resources
+Streamlit - For the amazing web framework
+Folium - For map visualization capabilities
+
+
+📞 Support
+If you have any questions or issues, please:
+
+Open an issue on GitHub
+Contact: your ankit.kumar.official115@email.com
+
+
+⭐ Show Your Support
+Give a ⭐️ if this project helped you!
+
+Made with ❤️ by [ ANKIT KUMAR]
+Project Year: 2026
+Course: AICTE AI Internship Batch 7
+
