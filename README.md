@@ -35,7 +35,7 @@ Prerequisites
 bashPython 3.10 or higher
 pip package manager
 Clone Repository
-bashgit clone https://github.com/your-username/ai-travel-planner.git
+bashgit clone  https://github.com/AnkitKumar-222/Travel_Planner_Agent
 cd ai-travel-planner
 Install Dependencies
 bashpip install -r requirements.txt
@@ -121,8 +121,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 👨‍💻 Author
 ANKIT KUMAR
 
-GitHub: @your-username
-LinkedIn: Your Profile
+GitHub: https://github.com/AnkitKumar-222
+LinkedIn: https://www.linkedin.com/in/ankit-kumar-355147244/
 Email: ankit.kumar.official115@email.com
 
 
